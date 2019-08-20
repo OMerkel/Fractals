@@ -27,7 +27,7 @@
  * a browser environment. Mind the canvas context is 'experimental-webgl'.
  *
  * Minor third party code was taken from sources as indicated by
- * mentined URLs. These code parts claimed to be freely available and
+ * mentioned URLs. These code parts claimed to be freely available and
  * license compatible with MIT.
  *
  * normal gl code logic:
