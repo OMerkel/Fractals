@@ -42,9 +42,9 @@ precision mediump float;
 
 #extension GL_OES_standard_derivatives : enable
 
-uniform float time;
-uniform vec2 mouse;
-uniform vec2 resolution;
+uniform float u_time;
+uniform vec2 u_mouse;
+uniform vec2 u_resolution;
 
 #define PI2 6.28318530718
 #define MAXITER 500
@@ -54,7 +54,7 @@ vec2 cmpxmul( in vec2 a, in vec2 b) {
 }
 
 vec3 getcolor( in float i) {
-  float t = 20.0 * i + time / 3.0;
+  float t = 20.0 * i + u_time / 3.0;
   // https://www.iquilezles.org/www/articles/palettes/palettes.htm
   vec3 a = vec3( 0.50, 0.50, 0.50);
   vec3 b = vec3( 0.50, 0.50, 0.50);
@@ -64,8 +64,8 @@ vec3 getcolor( in float i) {
 }
 
 void main( void ) {
-  vec2 st = gl_FragCoord.xy / resolution.xy;
-  float aspect = resolution.x / resolution.y;
+  vec2 st = gl_FragCoord.xy / u_resolution.xy;
+  float aspect = u_resolution.x / u_resolution.y;
   st.x *= aspect;
   vec3 color = vec3( 0.0);
 
@@ -76,7 +76,7 @@ void main( void ) {
   vec2 endy = vec2(  0.131825904212599176276485, 0.131825904212599176276486);
 
   // limit amplitude due to precision of float in GL_ES with this parameter set
-  float t = 0.49998 * sin( time / 20.0 ) + 0.5;
+  float t = 0.49998 * sin( u_time / 20.0 ) + 0.5;
 
   vec2 rx = t * (endx - begx) + begx;
   vec2 ry = t * (endy - begy) + begy;
