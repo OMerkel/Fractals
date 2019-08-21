@@ -17,8 +17,8 @@ Minor third party code was taken from sources as indicated in the code by
 mentioned URLs. These code parts claimed to be freely available and
 license compatible with MIT.
 
-Normal gl code logic
-====================
+Normal GL Shader Library code logic
+===================================
 
 * preload
     * init
