@@ -6,9 +6,7 @@ See it in action on https://omerkel.github.io/Fractals/Mandelbrot/Shader_Library
 While our visit of [Evoke2019 demo party/conference](https://2019.evoke.eu/) in Cologne, Germany,
 we decided to implement a GLSL fragment shader to render a zoom path
 into a Mandelbrot set while live shifting the color palette.
-The version implemented first used a __glslViewer__ on Linux.
-
-* https://github.com/patriciogonzalezvivo/glslViewer
+The version implemented first used a [glslViewer](https://github.com/patriciogonzalezvivo/glslViewer) on Linux.
 
 Here a wrapper for WebGL SL is implemented to run the same Shaders in
 a browser environment. Mind the canvas context is 'experimental-webgl'.
