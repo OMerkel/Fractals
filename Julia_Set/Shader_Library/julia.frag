@@ -1,5 +1,5 @@
 /**
- * @file mandelbrot.frag
+ * @file julia.frag
  * @author Oliver Merkel <Merkel(dot)Oliver(at)web(dot)de>
  * @author PJ
  * @date 2019 August 17th
@@ -15,11 +15,11 @@
  *
  * @section DESCRIPTION
  *
- * @brief GLSL fragment shader to render a zoom path into a Mandelbrot set.
+ * @brief GLSL fragment shader to render a zoom path into a Julia set.
  *
  * While our visit of Evoke2019 demo party/conference in Cologne, Germany,
  * we decided to implement a GLSL fragment shader to render a zoom path
- * into a Mandelbrot set while live shifting the color palette.
+ * into a Julia set while live shifting the color palette.
  *
  * Minor third party information related to color palette creation were
  * taken from following sources indicating to be freely available and
