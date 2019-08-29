@@ -1,5 +1,7 @@
 # Mandelbrot
 
+See it rendered live using WebGL Shader Library on https://omerkel.github.io/Fractals/Mandelbrot/Shader_Library
+
 From Jupyter Notebook _[Mandelbrot Set.ipynb](Mandelbrot%20Set.ipynb)_ :
 
 <table>
