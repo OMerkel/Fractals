@@ -1,6 +1,16 @@
-# Mandelbrot
+# Mandelbrot Set
 
 See it rendered live using WebGL Shader Library on https://omerkel.github.io/Fractals/Mandelbrot/Shader_Library
+
+The Mandelbrot Set is named after Benoît Mandelbrot (&#42; 20.11.1924; &#x2020; 14.10.2010).
+
+With z,c &Element; &#x2102; where z<sub>0</sub>=0 and c corresponding the position inside a Complex Plane
+the value of z is rendered in iterations and checked whether it remains bounded.
+
+z<sub>n+1</sub>=z<sub>n</sub><sup>2</sup>+c
+
+The position gets a color value dependend on the number of iterations reaching the BAILOUT value of 2.0 for
+|z|.
 
 From Jupyter Notebook _[Mandelbrot Set.ipynb](Mandelbrot%20Set.ipynb)_ :
 
