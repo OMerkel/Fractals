@@ -3,7 +3,7 @@ Julia Sets
 
 See it rendered live using WebGL Shader Library on https://omerkel.github.io/Fractals/Julia_Set/Shader_Library
 
-The Julia Sets are closely related to the Mandelbrot sets.
+The Julia Sets are closely related to the [Mandelbrot sets](../Mandelbrot).
 
 Here with z,c &Element; &#x2102; where z<sub>0</sub> corresponds the position inside a Complex Plane
 the value of z is rendered in iterations and checked whether it remains bounded. c is set to be a fixed
