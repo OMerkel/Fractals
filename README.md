@@ -3,7 +3,8 @@
 Rendering Fractals like
 
 * [Hilbert curves](Hilbert),
-* [Julia sets](Julia_Set) and
-* [Mandelbrot sets](Mandelbrot)
+* [Julia sets](Julia_Set),
+* [Mandelbrot sets](Mandelbrot) and
+* [Sierpinski triangle](Sierpinski)
 
 in various techniques.
