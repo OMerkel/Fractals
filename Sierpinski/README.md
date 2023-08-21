@@ -18,4 +18,8 @@ python sierpinski.py
 * Pressing SPACE iterates through the generation step by step.
     * In the SierpinskiOverlay window an additional line is drawn between the current cursor position and one of the randomly selected triangle corners. In the next iteration the cursor position is set to the middle of that line (... randomly selecting one of the triangle corners again, etc.).
 
-<img src='ScreenshotSierpinski.jpg' width='80%' />
+<img src='ScreenshotSierpinski1.jpg' width='80%' />
+
+After lots of iterations:
+
+<img src='ScreenshotSierpinski2.jpg' width='80%' />
