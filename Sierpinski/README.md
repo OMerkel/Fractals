@@ -64,7 +64,7 @@ Some item is displayed in id _iteration0_. Here I use a path drawing a triangle 
 
 Each higher iteration ( here _id_ is _iteration1_ ) points or uses the lower one ( _l:href="#iteration0"_ ) and transforms it by scaling and translating.
 
-The six values of the transform matrix( a b c d e f ) correspond to the coordinate matrix multiplication as follows:
+The six values of the transform _matrix( a b c d e f )_ correspond to the coordinate matrix multiplication as follows:
 
 <img src='SVG/transform_matrix.png' />
 
