@@ -62,7 +62,7 @@ The construction rule looks as follows: Per iteration the previous iteration's i
 
 Some item is displayed in id _iteration0_. Here I use a path drawing a triangle of side length one. But it could actually be any similar sized object. Since each iteration reduces the size by half that is why the object is anyway reduced to a point on higher iterations.
 
-Each higher iteration points or uses the lower one ( _l:href="#iteration0"_ ) and transform it by scaling and translating it.
+Each higher iteration ( here _id_ is _iteration1_ ) points or uses the lower one ( _l:href="#iteration0"_ ) and transforms it by scaling and translating.
 
 The six values of the transform matrix( a b c d e f ) correspond to the coordinate matrix multiplication as follows:
 
