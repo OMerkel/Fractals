@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Mandelbrot set ASCII renderer.
-Copyright (c) 2025 by Oliver Merkel <Merkel(dotOliver(at)web(dot)de>
+Copyright (c) 2025 by Oliver Merkel <Merkel(dot)Oliver(at)web(dot)de>
 License: MIT
 Generates an ASCII representation of the Mandelbrot set in the terminal.
 """
