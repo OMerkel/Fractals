@@ -2,7 +2,7 @@
 
 Mind the resulting image is rendered in a Rust-alike debug trait `impl<'a> fmt::Debug for DebugImage<'a>`
 
-The image is self is represented as a `Vec<Vec<u8>>` of chosen size.
+The image is represented as a `Vec<Vec<u8>>` of chosen size.
 
 Depending on the maxiter you are rendering with you might have to adapt some code snippets.
 
