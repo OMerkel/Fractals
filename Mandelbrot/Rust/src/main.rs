@@ -13,6 +13,8 @@
  * - Compile and run the program to see the Mandelbrot set displayed in the console.
  */
 
+use std::fmt;
+
 fn generate_mandelbrot_set(
     width: usize, height: usize,
     x_range_min: f64, x_range_max: f64,
@@ -62,33 +64,39 @@ fn generate_mandelbrot_set(
     img
 }
 
-fn display_image(image: &Vec<Vec<u8>>) {
+struct DebugImage<'a>(&'a Vec<Vec<u8>>);
+
+impl<'a> fmt::Debug for DebugImage<'a> {
     /*
-     * Display the Mandelbrot set image in the console.
+     * Implementation of the Debug Trait for the Mandelbrot set image in the console.
      * Each pixel value is mapped to a character for visualization.
      * 
      * Parameters:
-     * - image: A 2D vector representing the Mandelbrot set image.
-     * Returns: Nothing.
+     * - f: The formatter to write the output to.
+     * 
+     * Returns: A formatted string representation of the image.
      */
-    for row in image {
-        for pixel in row {
-            let shade = match pixel {
-                0..=1 => '@',
-                2 => '%',
-                3 => '#',
-                4 => 'o',
-                5 => 'u',
-                6..=8 => '*',
-                9..=10 => '=',
-                11..=15 => '+',
-                16..=20 => ':',
-                21..=25 => '.',
-                _ => ' ',
-            };
-            print!("{}", shade);
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        for row in self.0 {
+            for pixel in row {
+                let shade = match pixel {
+                    0..=1 => '@',
+                    2 => '%',
+                    3 => '#',
+                    4 => 'o',
+                    5 => 'u',
+                    6..=8 => '*',
+                    9..=10 => '=',
+                    11..=15 => '+',
+                    16..=20 => ':',
+                    21..=25 => '.',
+                    _ => ' ',
+                };
+                write!(f, "{}", shade)?;
+            }
+            writeln!(f)?;
         }
-        println!();
+        Ok(())
     }
 }
 
@@ -102,5 +110,5 @@ fn main() {
         -1.0, 1.0,
         100
     );
-    display_image(&image);
+    println!("{:?}", DebugImage(&image));
 }
