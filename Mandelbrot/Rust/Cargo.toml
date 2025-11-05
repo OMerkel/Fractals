@@ -1,0 +1,12 @@
+[package]
+name = "rust_mandelbrot"
+version = "0.1.0"
+edition = "2021"
+authors = ["Oliver Merkel <Merkel(dot)Oliver(at)web(dot)de>"]
+description = "A simple Mandelbrot set generator in Rust"
+license = "MIT"
+repository = "https://github.com/OMerkel/Fractals.git"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
